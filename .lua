@@ -50,9 +50,9 @@ local Section = Back:AddSection({
 })
 CoolParagraph:Set("Go back", "Clicking this will go back to the Annon Hub")
 Back:AddButton({
-	Name = "Go back",
+	Name = "Button!",
 	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/better-script-hub-i-made/main/.lua')))()
+      		print("button pressed")
   	end    
 })
 
