@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Title of the library",IntroEnabled = false, HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "SImulator HUB",IntroEnabled = false, HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
 -- Values
@@ -17,7 +17,6 @@ while _G.autoClicker == true do
    wait(.00000000000000000000000000000000000000000000000000000000001)
 end
 end
-
 
 
 -- Main Simulators
@@ -38,6 +37,24 @@ Sim:AddToggle({
 	end    
 })
 
+
+
+-- Go back
+local Back = Window:MakeTab({
+	Name = "Go back",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Back:AddSection({
+	Name = "Coming back???"
+})
+CoolParagraph:Set("Go back", "Clicking this will go back to the Annon Hub")
+Back:AddButton({
+	Name = "Go back",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/better-script-hub-i-made/main/.lua')))()
+  	end    
+})
 
 
 
