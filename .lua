@@ -6,6 +6,7 @@ local Window = OrionLib:MakeWindow({Name = "SImulator HUB",IntroEnabled = false,
 
 -- Values
 _G.autoCliker = true -- Miner Clicker Simulator
+_G.AutoClick = true -- Get Big Auto Clicker 
 
 
 
@@ -17,6 +18,14 @@ function autoClicker()
 while _G.autoClicker == true do
    game:GetService("ReplicatedStorage").Remotes.Click:InvokeServer()
    wait(.00000000000000000000000000000000000000000000000000000000001)
+end
+end
+
+-- Function Get Big Auto Clicker
+	function autoClick(
+	while _G.autoClick == True do
+   game:GetService("ReplicatedStorage").ClickEvents.Grow:FireServer()
+   wait(.00000000000000000000000000000000000000000001)
 end
 end
 
