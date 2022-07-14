@@ -22,7 +22,7 @@ end
 
 -- Main Simulators
 local Sim = Window:MakeTab({
-	Name = "Simulator Scripts/Hubs",
+	Name = "Simulator Scripts",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
