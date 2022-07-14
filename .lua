@@ -22,10 +22,10 @@ end
 end
 
 -- Function Get Big Auto Clicker
-	function autoClick(
-	while _G.autoClick == True do
+function autoClick()
+while _G.autoClick == True do
    game:GetService("ReplicatedStorage").ClickEvents.Grow:FireServer()
-   wait(.00000000000000000000000000000000000000000001)
+	wait(.0000000000000000000000000000000000000001)
 end
 end
 
@@ -36,6 +36,7 @@ local Sim = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+-- Miner Simulator
 local Section = Sim:AddSection({
 	Name = "Miner Clicker Simulator Script"
 })
@@ -47,10 +48,22 @@ Sim:AddToggle({
 		autoClicker()
 	end    
 })
+		
+-- Get Big Simulator
+local Section = Sim:AddSection({
+	Name = "Get Big Simulator"
+})
+Sim:AddToggle({
+	Name = "Auto Clicker",
+	Default = false,
+	Callback = function(Value)
+		_G.autoClick = Value
+		autoClick()
+	end    
+})
 
 
-
--- Go back
+-- Go back to main hub
 local Back = Window:MakeTab({
 	Name = "Go back",
 	Icon = "rbxassetid://4483345998",
@@ -59,11 +72,11 @@ local Back = Window:MakeTab({
 local Section = Back:AddSection({
 	Name = "Coming back???"
 })
-CoolParagraph:Set("Go back", "Clicking this will go back to the Annon Hub")
+CoolParagraph:Set("Go back","Clicking this will go back to the Annon Hub")
 Back:AddButton({
-	Name = "Button!",
+	Name = "GO back to main hub",
 	Callback = function()
-      		print("button pressed")
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/YourMomClapped/better-script-hub-i-made/main/.lua')))()
   	end    
 })
 
