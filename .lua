@@ -7,7 +7,7 @@ local Window = OrionLib:MakeWindow({Name = "SImulator HUB",IntroEnabled = false,
 -- Values
 _G.autoCliker = true -- Miner Clicker Simulator
 _G.AutoClick = true -- Get Big Auto Clicker 
-_G.autoClic = true -- Ninja Training Simulator
+
 
 
 
@@ -30,13 +30,7 @@ while _G.autoClick == True do
 end
 end
 	
--- Function Ninja Training Simulator autoclicker
-	function autoClic()
-	while _G.autoClic == true do
-   game:GetService("ReplicatedStorage").Events.Click:FireServer()
-	wait(.00000000000000000000000000000000000000001)
-end
-end
+
 
 
 -- Main Simulators
@@ -71,17 +65,7 @@ Sim:AddToggle({
 	end    
 })
 	
-local Section = Sim:AddSection({
-	Name = "Ninja Trianing Simulator"
-})
-	Sim:AddToggle({
-	Name = "Auto Clicker",
-	Default = false,
-	Callback = function(Value)
-		_G.autoClic = Value
-		autoClic()
-	end    
-})
+
 	
 	
 
