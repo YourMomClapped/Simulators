@@ -3,6 +3,13 @@ if Player.UserId == 1201621667 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "SImulator HUB",IntroEnabled = false, HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+	-- NOTIFICATION
+	OrionLib:MakeNotification({
+	Name = "Attached script",
+	Content = "Welcome to Simulator Hub",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
 
 -- Values
 _G.autoCliker = true -- Miner Clicker Simulator
@@ -32,7 +39,14 @@ end
 	
 
 
-
+-- Main
+	local Main = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+	Main:AddParagraph("What is Simulator Hub?","Simulator Hub is a hub i created for simulators only Annon Hub was getting more and more confusing an forgetting where everything is, making hubs for certain sujects would make it alot more organized.")
+	
 -- Main Simulators
 local Sim = Window:MakeTab({
 	Name = "Simulator Scripts",
