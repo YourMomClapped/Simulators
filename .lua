@@ -5,9 +5,9 @@ local Window = OrionLib:MakeWindow({Name = "SImulator HUB",IntroEnabled = false,
 	-- NOTIFICATION
 	OrionLib:MakeNotification({
 	Name = "Attached script",
-	Content = "Welcome to Simulator Hub",
+	Content = "Welcome to Simulator Hub ,Simulator Hub has a bunch of simulator scripts i created.",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 15
 })
 
 -- Values
