@@ -13,6 +13,7 @@ local Window = OrionLib:MakeWindow({Name = "SImulator HUB",IntroEnabled = false,
 -- Values
 _G.autoCliker = true -- Miner Clicker Simulator
 _G.AutoClick = true -- Get Big Auto Clicker 
+_G.Clicker = true -- Anime Clicking Simulator
 
 
 
@@ -33,6 +34,16 @@ function autoClick()
 while _G.autoClick == True do
    game:GetService("ReplicatedStorage").ClickEvents.Grow:FireServer()
 	wait(.0000000000000000000000000000000000000001)
+end
+end
+
+
+--Anime clicker fucntion
+-- auto clicker
+function Clicker()
+while _G.Clicker == true do
+   game:GetService("ReplicatedStorage").Remotes.ClickRemote:FireServer(false,false,"Clicker!")
+	wait(.000000000000000000000000000000000001)
 end
 end
 	
@@ -77,6 +88,28 @@ Sim:AddToggle({
 		autoClick()
 	end    
 })
+
+-- Anime Clicker Simulator
+local Section = Sim:AddSection({
+	Name = "Anime Clicker Simulator"
+})
+Sim:AddButton({
+	Name = "Fast AutoClicker (rejoin when finish)",
+	Callback = function()
+      		while wait() do
+   game:GetService("ReplicatedStorage").Remotes.ClickRemote:FireServer(false,false,"Clicker!")
+end
+  	end    
+})
+Sim:AddToggle({
+	Name = "Auto Clicker",
+	Default = false,
+	Callback = function(Value)
+		_G.Clicker = Value
+		Clicker()
+	end    
+})
+
 	
 
 	
