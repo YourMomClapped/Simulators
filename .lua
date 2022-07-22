@@ -2,7 +2,16 @@ local Player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "SImulator HUB",IntroEnabled = false, HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-	-- NOTIFICATION
+
+--[[
+███╗░░██╗░█████╗░████████╗██╗███████╗██╗░█████╗░░█████╗░████████╗██╗░█████╗░███╗░░██╗
+████╗░██║██╔══██╗╚══██╔══╝██║██╔════╝██║██╔══██╗██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║
+██╔██╗██║██║░░██║░░░██║░░░██║█████╗░░██║██║░░╚═╝███████║░░░██║░░░██║██║░░██║██╔██╗██║
+██║╚████║██║░░██║░░░██║░░░██║██╔══╝░░██║██║░░██╗██╔══██║░░░██║░░░██║██║░░██║██║╚████║
+██║░╚███║╚█████╔╝░░░██║░░░██║██║░░░░░██║╚█████╔╝██║░░██║░░░██║░░░██║╚█████╔╝██║░╚███║
+╚═╝░░╚══╝░╚════╝░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝]]
+
+
 	OrionLib:MakeNotification({
 	Name = "Attached script",
 	Content = "Welcome to Simulator Hub ,Simulator Hub has a bunch of simulator scripts i created.",
@@ -10,7 +19,16 @@ local Window = OrionLib:MakeWindow({Name = "SImulator HUB",IntroEnabled = false,
 	Time = 15
 })
 
--- Values
+
+
+--[[
+██╗░░░██╗░█████╗░██╗░░░░░██╗░░░██╗███████╗░██████╗
+██║░░░██║██╔══██╗██║░░░░░██║░░░██║██╔════╝██╔════╝
+╚██╗░██╔╝███████║██║░░░░░██║░░░██║█████╗░░╚█████╗░
+░╚████╔╝░██╔══██║██║░░░░░██║░░░██║██╔══╝░░░╚═══██╗
+░░╚██╔╝░░██║░░██║███████╗╚██████╔╝███████╗██████╔╝
+░░░╚═╝░░░╚═╝░░╚═╝╚══════╝░╚═════╝░╚══════╝╚═════╝░]]
+
 _G.autoCliker = true -- Miner Clicker Simulator
 _G.AutoClick = true -- Get Big Auto Clicker 
 _G.Clicker = true -- Anime Clicking Simulator
