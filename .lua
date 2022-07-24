@@ -123,6 +123,16 @@ Simm:AddDropdown({
 	end    
 })
 
+local Section = Simm:AddSection({
+	Name = "Blade Simulator"
+})
+Simm:AddButton({
+	Name = "Blade Simulator auto tower",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Pikaruru/Scripts/main/bladesimulator.lua"))()
+  	end    
+})
+
 
 
 
