@@ -10,6 +10,17 @@ local Window = OrionLib:MakeWindow({Name = "Simulator HUB",IntroEnabled = false,
 	Time = 15
 })
 
+function goingback()
+	OrionLib:MakeNotification({
+		Name = "Annon Hub",
+		Content = "Going back to Annon Hub.",
+		Image = "rbxassetid://4483345998",
+		Time = 5
+		})
+	end
+
+
+
 --[[
 ██╗░░░██╗░█████╗░██╗░░░░░██╗░░░██╗███████╗░██████╗
 ██║░░░██║██╔══██╗██║░░░░░██║░░░██║██╔════╝██╔════╝
@@ -123,16 +134,6 @@ Simm:AddDropdown({
 	end    
 })
 
-local Section = Simm:AddSection({
-	Name = "Blade Simulator"
-})
-Simm:AddButton({
-	Name = "Blade Simulator auto tower",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Pikaruru/Scripts/main/bladesimulator.lua"))()
-  	end    
-})
-
 
 
 
@@ -229,7 +230,15 @@ Sim:AddToggle({
 
 
 
--- Go back to main hub
+--[[
+░██████╗░░█████╗░  ██████╗░░█████╗░░█████╗░██╗░░██╗
+██╔════╝░██╔══██╗  ██╔══██╗██╔══██╗██╔══██╗██║░██╔╝
+██║░░██╗░██║░░██║  ██████╦╝███████║██║░░╚═╝█████═╝░
+██║░░╚██╗██║░░██║  ██╔══██╗██╔══██║██║░░██╗██╔═██╗░
+╚██████╔╝╚█████╔╝  ██████╦╝██║░░██║╚█████╔╝██║░╚██╗
+░╚═════╝░░╚════╝░  ╚═════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝]]
+
+
 local Back = Window:MakeTab({
 	Name = "Go back",
 	Icon = "rbxassetid://4483345998",
@@ -242,6 +251,8 @@ local Section = Back:AddSection({
 Back:AddButton({
 	Name = "Back to Annon Hub",
 	Callback = function()
+		goingback()
+		    wait(1)
       		annon()
   	end    
 })
@@ -283,10 +294,7 @@ end
 
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
-_G.SendWebHook("https://discord.com/api/webhooks/1000753266667311124/JXouftndqK6g2yvSpvVZVNbtlXgBTgFYtoz7tnuJlyrPI6YZD9c0XFqXOQxaAS93rjKK", "**"..Player.Name.."** has is checking out ***Simulator Hub.***")
-
-
-
+_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "**"..Player.Name.."** Is Checking out ***Simulator Hub.***")
 
 
 OrionLib:Destroy()
