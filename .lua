@@ -128,15 +128,35 @@ Simm:AddButton({
 Simm:AddDropdown({
 	Name = "Ninja Training Simulator Features",
 	Default = "Click Me",
-	Options = {"Click Me", "Auto Taps", "Auto Rebirth", "Auto claim archievements", "Auto prectice", "Auto upgrade normal master", "Auto open eggs", "Auto craft all pets", "Auto upgrades"},
+	Options = {"[+] Auto Taps", "[+] Auto Rebirth", "[+] Auto claim archievements", "[+] Auto prectice", "[+] Auto upgrade normal master", "[+] Auto open eggs", "[+] Auto craft all pets", "[+] Auto upgrades"},
 	Callback = function(Value)
 		print(Value)
 	end    
 })
 
 
+--------------------------- Anime Speed Simualtor ----------------------------
+
+local Section = Simm:AddSection({
+	Name = "Anime Speed Simulator"
+})
+Simm:AddButton({
+	Name = "Anime Speed Simulator GUI",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/TK029064/StrikeHub/main/Loader'))()
+  	end    
+})
 
 
+
+Simm:AddDropdown({
+	Name = "Anime Speed Simulator GUI",
+	Default = "Click Me",
+	Options = {"[+] Auto Speed", "[+] Auto Rebirth", "[+] Auto Egg", "[+] Auto Rejoin If got kicked", "[+] More"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
 
 
 
