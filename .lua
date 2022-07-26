@@ -323,10 +323,45 @@ end
 
 
 
-
+--[[
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
-_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "**"..Player.Name.."** Is Checking out ***Simulator Hub.***")
+_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "**"..Player.Name.."** Is Checking out ***Simulator Hub.***")]]
+
+
+
+local webhookcheck =
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   "Kid with shit exploit"
+
+local url =
+   "https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj" -- put ur webhook here dumbos
+local data = {
+   ["content"] = "**"..Player.Name.."** Is Checking out ***Simulator Hub.***",
+   ["embeds"] = {
+       {
+           ["title"] = "Currently Playing: "   ..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.. " :)",
+           ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           ["image"] = {
+               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
 
 
 
