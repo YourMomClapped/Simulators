@@ -224,6 +224,18 @@ Sim:AddToggle({
 	end    
 })
 
+------------------------------ Pet Simulator X
+local Section = Sim:AddSection({
+	Name = "Pet Simulator X"
+})
+Sim:AddButton({
+	Name = "Pet Simuylator X Gui",
+	Callback = function()
+		loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
+  	end    
+})
+
+
 
 
 
