@@ -6,7 +6,7 @@ local Window = OrionLib:MakeWindow({Name = "Simulator HUB",IntroEnabled = false,
 	OrionLib:MakeNotification({
 	Name = "Attached script",
 	Content = "Welcome to Simulator Hub ,Simulator Hub has a bunch of simulator scripts i created.",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://9411304331",
 	Time = 15
 })
 
@@ -14,7 +14,7 @@ function goingback()
 	OrionLib:MakeNotification({
 		Name = "Annon Hub",
 		Content = "Going back to Annon Hub.",
-		Image = "rbxassetid://4483345998",
+		Image = "rbxassetid://4384406773",
 		Time = 5
 		})
 	end
@@ -82,7 +82,7 @@ end
 
 	local Main = Window:MakeTab({
 	Name = "Main",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4370345144",
 	PremiumOnly = false
 })
 	Main:AddParagraph("What is Simulator Hub?","Simulator Hub is a hub i created for simulators only Annon Hub was getting more and more confusing an forgetting where everything is, making hubs for certain sujects would make it alot more organized.")
@@ -110,7 +110,7 @@ end
 
 local Simm = Window:MakeTab({
 	Name = "Simulator Scripts",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4370346095",
 	PremiumOnly = false
 })
 
@@ -204,7 +204,7 @@ Simm:AddDropdown({
 
 local Sim = Window:MakeTab({
 	Name = "Sim scipts by me",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4330060040",
 	PremiumOnly = false
 })
 -- Miner Simulator
@@ -313,7 +313,7 @@ Sim:AddButton({
 
 local Back = Window:MakeTab({
 	Name = "Go back",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://4384406773",
 	PremiumOnly = false
 })
 local Section = Back:AddSection({
