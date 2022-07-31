@@ -115,6 +115,36 @@ local Simm = Window:MakeTab({
 })
 
 
+
+---------------------- Scythe Master -------------------------
+function ScytheMaster()
+	_G.on = not _G.on
+	game:GetService("Players").LocalPlayer.PlayerGui.AddValues.Enabled = not game:GetService("Players").LocalPlayer.PlayerGui.AddValues.Enabled
+	for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+	   if v:IsA("Tool") then
+		   shared.scythe = v.Name
+	   end
+	end
+	game.Players.LocalPlayer.Character.ChildAdded:Connect(function(item)
+		   if item:IsA("Tool") then
+		   shared.scythe = item.Name
+	   end
+	end)
+	game.Players.LocalPlayer.leaderstats.Rebirths.Changed:Connect(function(val)
+	   game.Players.LocalPlayer.leaderstats.Rebirths.Value = math.huge
+	end)
+	while _G.on do
+	pcall(function()
+	game:GetService("RunService").Heartbeat:Wait()
+	game.Players.LocalPlayer.Character[shared.scythe].Handle.Script.RemoteEvent:FireServer()
+	end)
+	end
+end
+
+
+
+
+
 ------------------------------ Ninja Training Simulator ------------------------------
 local Section = Simm:AddSection({
 	Name = "Ninja Training Simulator GUI"
@@ -232,6 +262,16 @@ Sim:AddButton({
 	Name = "Pet Simuylator X Gui",
 	Callback = function()
 		loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
+  	end    
+})
+
+local Section = Sim:AddSection({
+	Name = "Scythe Master"
+})
+Sim:AddButton({
+	Name = "Auto Swing",
+	Callback = function()
+      		ScytheMaster()
   	end    
 })
 
