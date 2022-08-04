@@ -19,6 +19,25 @@ function goingback()
 		})
 	end
 
+--------------------- Joining Discord Server ---------------------
+function SendingInviteSunrise()
+	OrionLib:MakeNotification({
+		Name = "Sending Discord Invite",
+		Content = "Sending Invite to our official discord server. . .",
+		Image = "rbxassetid://4370314188",
+		Time = 10
+		})
+	end
+
+		--------------------- Sending invite to Orion Discord server ---------------------
+	function SendingInviteSiris()
+		OrionLib:MakeNotification({
+			Name = "Sending Discord Invite",
+			Content = "Sending Invite to Siris/Orion. . .",
+			Image = "rbxassetid://4370314188",
+			Time = 10
+			})
+		end
 
 
 --[[
@@ -70,6 +89,10 @@ while _G.Clicker == true do
 	wait(.000000000000000000000000000000000001)
 end
 end
+
+function waitt()
+	wait(.08)
+end
 	
 
 --[[
@@ -85,9 +108,45 @@ end
 	Icon = "rbxassetid://4370345144",
 	PremiumOnly = false
 })
+waitt()
 	Main:AddParagraph("What is Simulator Hub?","Simulator Hub is a hub i created for simulators only Annon Hub was getting more and more confusing an forgetting where everything is, making hubs for certain sujects would make it alot more organized.")
-	
+	waitt()
+	Main:AddParagraph("Welcome to Simulator Hub","Key "..Player.Name.."Welcome to Simulator Hub Created by Annon#7747")
+	waitt()
+-------------------------- Credits --------------------------
+local Section = Main:AddSection({
+	Name = "Credits"
+})
 
+waitt()
+Main:AddDropdown({
+	Name = "Credits",
+	Default = "d",
+	Options = {"Annon#7747: Owner/Creator", "Siris:  Orion UI library", "Taki/Dino: Support Team"},
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+waitt()
+Main:AddButton({
+	Name = "Join Annon Hub offical discord server",
+	Callback = function()
+		SendingInviteSunrise()
+		wait(2)
+      	Sunrise()
+  	end    
+})
+
+waitt()
+Main:AddButton({
+	Name = "Join Siris Discord Server (Orion UI Library)",
+	Callback = function()
+		SendingInviteSiris()
+		wait(2)
+      	SirisDiscordInvite()
+  	end    
+})
 
 
 
@@ -108,6 +167,7 @@ end
 ██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░██████╔╝
 ╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░╚═════╝░]]
 
+waitt()
 local Simm = Window:MakeTab({
 	Name = "Simulator Scripts",
 	Icon = "rbxassetid://4370346095",
@@ -140,6 +200,8 @@ function ScytheMaster()
 	end)
 	end
 end
+
+
 
 
 
@@ -202,12 +264,14 @@ Simm:AddDropdown({
 ██████╔╝██║██║░╚═╝░██║╚██████╔╝███████╗██║░░██║░░░██║░░░╚█████╔╝██║░░██║
 ╚═════╝░╚═╝╚═╝░░░░░╚═╝░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝]]
 
+waitt()
 local Sim = Window:MakeTab({
 	Name = "Sim scipts by me",
 	Icon = "rbxassetid://4330060040",
 	PremiumOnly = false
 })
--- Miner Simulator
+
+------------------------------ Miner Simulator 
 local Section = Sim:AddSection({
 	Name = "Miner Clicker Simulator Script"
 })
@@ -220,7 +284,7 @@ Sim:AddToggle({
 	end    
 })
 		
--- Get Big Simulator
+------------------------------ Get Big Simulator ------------------------------
 local Section = Sim:AddSection({
 	Name = "Get Big Simulator"
 })
@@ -233,7 +297,7 @@ Sim:AddToggle({
 	end    
 })
 
--- Anime Clicker Simulator
+------------------------------ Anime Clicker Simulator ------------------------------
 local Section = Sim:AddSection({
 	Name = "Anime Clicker Simulator"
 })
@@ -254,7 +318,7 @@ Sim:AddToggle({
 	end    
 })
 
------------------------------- Pet Simulator X
+------------------------------ Pet Simulator X ------------------------------
 local Section = Sim:AddSection({
 	Name = "Pet Simulator X"
 })
@@ -274,7 +338,13 @@ Sim:AddButton({
       		ScytheMaster()
   	end    
 })
-
+-------- Scythe Master Gui --------
+Sim:AddButton({
+	Name = "Scythe Master Gui",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LuckyBlockExploits/BSE2/main/SMGUI", true))()
+  	end    
+})
 
 
 
@@ -310,7 +380,7 @@ Sim:AddButton({
 ╚██████╔╝╚█████╔╝  ██████╦╝██║░░██║╚█████╔╝██║░╚██╗
 ░╚═════╝░░╚════╝░  ╚═════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝]]
 
-
+waitt()
 local Back = Window:MakeTab({
 	Name = "Go back",
 	Icon = "rbxassetid://4384406773",
@@ -328,6 +398,36 @@ Back:AddButton({
       		annon()
   	end    
 })
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------- Discord invite from my discord server --------------------------------------------
+function Sunrise()
+	local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
+
+	Module.Prompt({ invite = "https://discord.gg/xxdstbR4", name = "" }) -- name is optional
+	
+	Module.Join("")
+end
+
+-------------------------------------------- Discord invite For Orion Discord --------------------------------------------
+function SirisDiscordInvite()
+	local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
+
+	Module.Prompt({ invite = "https://discord.gg/J8geGjUY", name = "" }) -- name is optional
+	
+	Module.Join("")
+end
+
+
 
 
 
