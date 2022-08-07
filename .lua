@@ -472,7 +472,7 @@ _G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6J
 
 
 
-_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "https://cdn.discordapp.com/attachments/998558647019913236/1005357754162090004/photo_62588edb73be46e64eb93606-1659737825622.png")
+_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "https://cdn.discordapp.com/attachments/1000753220508979320/1005665021696684063/photo_62588edb73be46e64eb93606-1659737825622.png")
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
