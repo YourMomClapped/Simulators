@@ -466,24 +466,24 @@ end
 --[[
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
-_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "**"..Player.Name.."** Is Checking out ***Simulator Hub.***")]]
+_G.SendWebHook("https://discord.com/api/webhooks/1006991255500242974/_7cMV322CNErPY_AuQlsxvFqxZVdFmEjpyfaf6-HejeaqlTwPGsUOJmVUEleZnNAWuZM", "**"..Player.Name.."** Is Checking out ***Simulator Hub.***")]]
 
 
 
 
 
-_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "https://cdn.discordapp.com/attachments/998857437161476106/1005665510563782696/photo_62588edb73be46e64eb93606-1659737825622.png")
+_G.SendWebHook("https://discord.com/api/webhooks/1006991255500242974/_7cMV322CNErPY_AuQlsxvFqxZVdFmEjpyfaf6-HejeaqlTwPGsUOJmVUEleZnNAWuZM", "https://cdn.discordapp.com/attachments/998857437161476106/1005665510563782696/photo_62588edb73be46e64eb93606-1659737825622.png")
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 	
-	_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "-- /// Injecting .")
+	_G.SendWebHook("https://discord.com/api/webhooks/1006991255500242974/_7cMV322CNErPY_AuQlsxvFqxZVdFmEjpyfaf6-HejeaqlTwPGsUOJmVUEleZnNAWuZM", "-- /// Injecting .")
 	function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 	
-	_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "-- /// Injecting . .")
+	_G.SendWebHook("https://discord.com/api/webhooks/1006991255500242974/_7cMV322CNErPY_AuQlsxvFqxZVdFmEjpyfaf6-HejeaqlTwPGsUOJmVUEleZnNAWuZM", "-- /// Injecting . .")
 	function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 	
-	_G.SendWebHook("https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj", "-- /// Injecting . . .")
+	_G.SendWebHook("https://discord.com/api/webhooks/1006991255500242974/_7cMV322CNErPY_AuQlsxvFqxZVdFmEjpyfaf6-HejeaqlTwPGsUOJmVUEleZnNAWuZM", "-- /// Injecting . . .")
 
 
 
@@ -496,7 +496,7 @@ local webhookcheck =
    "Kid with shit exploit"
 
 local url =
-   "https://discord.com/api/webhooks/1000753260291960842/Fz2CPTbbU6JHryzn8l7XpWq-j_3u2vLN1U7BY6QgGXjoueTHhDwjSP49nXSD_IXdomSj" -- put ur webhook here dumbos
+   "https://discord.com/api/webhooks/1006991255500242974/_7cMV322CNErPY_AuQlsxvFqxZVdFmEjpyfaf6-HejeaqlTwPGsUOJmVUEleZnNAWuZM" -- put ur webhook here dumbos
 local data = {
    ["content"] = "**"..Player.Name.."** Is Checking out ***Simulator Hub.***",
    ["embeds"] = {
